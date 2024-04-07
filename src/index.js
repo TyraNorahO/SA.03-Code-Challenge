@@ -83,10 +83,11 @@ function updateDom(movies){
         }
     };
     idBuyticket.dataset.movieId = movies.id;
-    let button = document.querySelector([datamovie-id="${movieId}"]);
+    let button = document.querySelector("[data-movie-id='"+movieId+"']");
     button.innerText = availabiity;
 }
 function buyTicket(movies){
+
     movies.tickets_sold++
     let ticketsSold = movies.tickets_sold;
     let requestHeaders = {
