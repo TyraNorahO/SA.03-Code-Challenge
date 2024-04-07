@@ -1,4 +1,4 @@
-et url = "http://localhost:3000/films/";
+let url = "http://localhost:3000/films/";
 let ulFilms = document.getElementById("films");
 let idBuyticket = document.getElementById("buy-ticket")
 
@@ -83,7 +83,7 @@ function updateDom(movies){
         }
     };
     idBuyticket.dataset.movieId = movies.id;
-    let button = document.querySelector([data-movie-id="${movieId}"]);
+    let button = document.querySelector([datamovie-id="${movieId}"]);
     button.innerText = availabiity;
 }
 function buyTicket(movies){
